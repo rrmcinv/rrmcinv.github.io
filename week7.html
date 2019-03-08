@@ -3,10 +3,20 @@
 <h2 style = "font-size:200%;">Week 7 - Technology and Security</h1></b>
 
 <p>
+Attribution of attacks and criminal activity is one of the most important tasks undertaken by the intelligence community of the US government. When plans for an attack on US infrastructure is intercepted, or when evidence related to the prosecution of a crime is being gathered, the ability to accurately determine what parties are responsible for which activities is crucial to keeping our people and property safe. However, as my time at the National Security Agency taught me, technology can make this task extremely difficult.
+<br><br>
+One of the most annoying impediments to attribution is the use of Network Address Translation (NAT) and Port Address Translation (PAT), technologies made necessary by the limited number of available IPv4 addresses<sup>1</sup>. NAT and PAT hide the IP address of a user by transforming it into a different address, allowing for the use of large networks with many devices hidden behind a single public IP. In many cases, an ISP will assign a single (often non-static) IP address to a significant chunk of their customer base, which can include many different types of customers in varied geographic locations. This practice is necessitated by the format of IPv4 itself, and so is not likely to go away until IPv6 is finally implemented - a fact that is both a blessing and a curse.
+<br><br>
+On the one hand, the use of NAT and PAT provides a layer of obfuscation that, at least on the surface, provides a level of privacy to citizens desiring to remain anonymous on the internet. For many people, this provides at least a superficial level of comfort and security, as they know that their identities may not be readily ascertained from their IP. American citizens wishing keep their information out of the hands of the government can thank IPv4 for its assistance towards that end.
+<br><br>
+However, this protection is, in many cases, superficial at best. In the US, law enforcement agencies with a warrant are able to subpoena ISPs to obtain usage records and identify the source of internet traffic. Additionally, there are many ways in which attackers and authorities can circumvent the protection provided by NAT and PAT, obtaining information on the user of the IP through other technological vulnerabilities and markers, such as cookies and user agent strings<sup>2</sup>. Finally, when it comes to protecting the US against foreign adversaries and hackers - who are often very technically skilled and located outside of the reach of our law enforcement - these technologies can greatly complicate defense efforts.
+<br><br>
+For the time being, both NAT and PAT are necessary to the continued functioning of the internet. When IPv6 is finally fully implemented, we may expect to see both disappear, as the new protocol will not require them. From a security standpoint, this is a bittersweet eventuality - though, when the time comes, we will surely be too concerned with all the inevitable flaws found in IPv6 to remember what we traded away.
 
 
 
 </p>
 
 <p>
-<sup>1</sup><a href=""></a></br>
+<sup>1</sup><a href="http://www.enterprisenetworkingplanet.com/netsp/article.php/3632496/Networking-101-Understanding-NAT-and-PAT.htm">http://www.enterprisenetworkingplanet.com/netsp/article.php/3632496/Networking-101-Understanding-NAT-and-PAT.htm</a></br>
+<sup>2</sup><a href="https://www.f5.com/services/resources/white-papers/the-myth-of-network-address-translation-as-security">https://www.f5.com/services/resources/white-papers/the-myth-of-network-address-translation-as-security</a></br>
